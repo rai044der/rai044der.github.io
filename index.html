@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Портфолио</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" type="text/css" href="css/styles.css?v=4">
 </head>
+
 <body>
   <div class="name" id="name_header">
     <div>
       Офицеров Александр Сергеевич
     </div>
   </div>
+
   <div class="header_container">
     <div class="container_short_info">
       <div>
         <p>Образование: 3 курс направления ИВТ в ИАТЭ НИЯУ МИФИ</p>
+      </div>
+      <div>
+        <p>Дополнительное образование: оператор БПЛА</p>
       </div>
       <div>
         <p>Основное направление: разработка hardware решений и программ к ним</p>
@@ -33,34 +40,76 @@
     </div>
   </div>
 
-  <div class="word_projects_container_container" style="margin-top: 8vh;"> 
-    <div class="word_projects_container"> 
-     <div class="word_projects">Портфолио</div> 
-    </div> 
-   </div>
+  <div class="word_projects_container_container">
+    <div class="word_projects_container">
+      <div class="word_projects">Портфолио</div>
+    </div>
+  </div>
 
-  <footer> 
-    <div> 
-     <p id="contact_word">Контакты:</p> 
-     <div class="contact_container"> 
-      <div class="link_container_0"> 
-       <p>E-mail:</p> 
-       <div class="link_container_1"> <a href="mailto:rai044der@gmail.ru">rai044der@gmail.ru</a> 
-       </div> 
-      </div> 
-      <div class="link_container_0"> 
-       <p>Telegram:</p> 
-       <div class="link_container_1"> <a href="https://t.me/rai044der">@rai044der</a> 
-       </div> 
-      </div> 
-      <div class="link_container_0"> 
-       <p>VK:</p> 
-       <div class="link_container_1"> <a href="https://vk.com/rai044der">Александр Офицеров</a> 
-       </div> 
-      </div> 
-     </div> 
-    </div> 
-   </footer>
+  <div id="project_container">
+    <div class="card_project_container" , onclick="loadPage(greenexpert.html)" style="width: 25%;
+    height: 25%;">
+      <img src="./images/GE/logo.jpg" alt="Green Expert" class="image">
+      <p class="caption">ERP система для агрономических предприятий</p>
+    </div>
+
+    <div class="card_project_container" , onclick="loadPage(brewery.html)">
+      <img src="./images/brewery/logo.png" alt="Brewery" class="image">
+      <p class="caption">Прошивка для пивоварни</p>
+    </div>
+
+    <div class="card_project_container" , onclick="loadPage(boiler.html)">
+      <img src="./images/boiler/logo.jpg" alt="Boiler" class="image">
+      <p class="caption">Прошивка для контроллера трехфазного котла</p>
+    </div>
+
+    <div class="card_project_container" , onclick="loadPage(iotkit.html)" style="width: 30%;
+    height: 30%">
+      <img src="./images/iotkit/logo.jpg" alt="iotkit" class="image">
+      <p class="caption">Dev kit устройства iot</p>
+    </div>
+
+    <div class="card_project_container" , onclick="loadPage(follower.html)" style="width: 35%;
+    height: 35%">
+      <img src="./images/follower/logo.jpg" alt="Follower" class="image">
+      <p class="caption">Робот следующий по линии</p>
+    </div>
+
+    <div class="card_project_container" , onclick="loadPage(trash-duck.html)" style="width: 30%;
+    height: 30%">
+      <img src="./images/trash-duck/logo.jpg" alt="trash-duck" class="image">
+      <p class="caption">Робот для сборки мусора на водоемах</p>
+    </div>
+
+    <div class="card_project_container" , onclick="loadPage(flower.html)" style="width: 30%;
+    height: 30%">
+      <img src="./images/flower/logo.png" alt="flower" class="image">
+      <p class="caption">Проект подарка на 8 марта</p>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p id="contact_word">Контакты:</p>
+      <div class="contact_container">
+        <div class="link_container_0">
+          <p>E-mail:</p>
+          <div class="link_container_1"> <a href="mailto:rai044der@gmail.ru">rai044der@gmail.ru</a>
+          </div>
+        </div>
+        <div class="link_container_0">
+          <p>Telegram:</p>
+          <div class="link_container_1"> <a href="https://t.me/rai044der">@rai044der</a>
+          </div>
+        </div>
+        <div class="link_container_0">
+          <p>VK:</p>
+          <div class="link_container_1"> <a href="https://vk.com/rai044der">Александр Офицеров</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
