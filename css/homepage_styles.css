@@ -1,30 +1,30 @@
 body {
-    position: relative;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-    background-color: rgb(40, 40, 40);
+	background-color: rgb(40, 40, 40);
 }
 
 :root {
-    --main-color: #53a7ea;
-    font-family: Arial;
-    color: white;
+	--main-color: #53a7ea;
+	font-family: Arial;
+	color: white;
 }
 
 .name {
 	background-color: gray;
 	height: 10vh;
-    width: auto;
-    margin-bottom: 2vh;
+	width: auto;
+	margin-bottom: 2vh;
 	font-size: 2rem;
 }
 
 #name_header {
 	margin-left: 0vw;
 	margin-top: 1vh;
-    padding-top: 1px;
-	box-shadow: 0px -4px var(--main-color);          
+	padding-top: 1px;
+	box-shadow: 0px -4px var(--main-color);
 }
 
 #name_header div {
@@ -34,19 +34,19 @@ body {
 }
 
 .header_container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: top;
-    justify-content: space-between;
-    margin-left: 5vw;
-    margin-right: 20vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: top;
+	justify-content: space-between;
+	margin-left: 5vw;
+	margin-right: 20vw;
 }
 
 .container_short_info div p {
 	display: inline-block;
 	padding-top: 1.5vh;
 	margin: 0;
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 #my_photo_container {
@@ -60,7 +60,7 @@ body {
 #my_photo {
 	width: 100%;
 	height: 100%;
-    background-image: url(../images/me.webp);
+	background-image: url(../images/me.webp);
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -79,13 +79,13 @@ body {
 	align-items: center;
 	background-color: var(--main-color);
 	text-align: center;
-    height: 5vh;
+	height: 5vh;
 }
 
 .word_projects {
 	font-size: 2rem;
-    padding-top: 0.7vh;
-    text-align: vertical;
+	padding-top: 0.7vh;
+	text-align: vertical;
 }
 
 #project_container {
@@ -94,25 +94,25 @@ body {
 	margin-right: 2vw;
 	margin-bottom: 10vh;
 	display: flex;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 	align-items: center;
-    justify-content: space-around;
-    border-bottom: 200px;
+	justify-content: space-around;
+	border-bottom: 200px;
 }
 
-  .card_project_container {
+.card_project_container {
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	margin: 1vh;
-  }
-  
-  .card_project_container img {
+	margin: 1.5vh;
+}
+
+.card_project_container img {
 	display: block;
 	max-width: 100%;
-  }
-  
-  .caption {
+}
+
+.caption {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -124,7 +124,7 @@ body {
 	height: auto;
 	line-height: 50px;
 	vertical-align: middle;
-  }
+}
 
 footer {
 	width: 95vw;
@@ -133,10 +133,10 @@ footer {
 	margin-top: 1vh;
 	margin-right: 10vw;
 	display: flex;
-	flex-wrap: wrap; 
- 	justify-content: space-between;
- 	align-items: flex-end;
-    margin-left: 5vw;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-left: 5vw;
 }
 
 #contact_word {
@@ -179,10 +179,10 @@ a {
 }
 
 .link_description {
-  color: #ebebeb;
-  width: 50vw;  
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+	color: #ebebeb;
+	width: 50vw;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
 }
