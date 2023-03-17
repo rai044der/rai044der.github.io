@@ -47,39 +47,39 @@
   </div>
 
   <div id="project_container">
-    <div class="card_project_container" , onclick="loadPage(greenexpert.html)">
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/ge/ge.html&quot;)">
       <img src="./images/GE/logo.jpg" alt="Green Expert" class="image">
       <p class="caption">ERP система для агрономических предприятий</p>
     </div>
 
-    <div class="card_project_container" , onclick="loadPage(brewery.html)">
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/brewery/brewery.html&quot;)">
       <img src="./images/brewery/logo.png" alt="Brewery" class="image">
       <p class="caption">Прошивка для пивоварни</p>
     </div>
 
-    <div class="card_project_container" , onclick="loadPage(boiler.html)">
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/boiler/boiler.html&quot;)">
       <img src="./images/boiler/logo.jpg" alt="Boiler" class="image">
       <p class="caption">Прошивка для контроллера трехфазного котла</p>
     </div>
 
-    <div class="card_project_container" , onclick="loadPage(iotkit.html)">
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/iotkit/iotkit.html&quot;)">
       <img src="./images/iotkit/logo.png" alt="iotkit" class="image">
-      <p class="caption">Dev kit устройства iot</p>
+      <p class="caption">Плата разработки для системы умного дома</p>
     </div>
 
-    <div class="card_project_container" , onclick="loadPage(flower.html)">
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/flower/flower.html&quot;)">
       <img src="./images/flower/logo.png" alt="flower" class="image">
       <p class="caption">Проект подарка на 8 марта</p>
     </div>
 
-    <div class="card_project_container" , onclick="loadPage(follower.html)" >
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/follower/follower.html&quot;)">
       <img src="./images/follower/logo.jpg" alt="Follower" class="image">
       <p class="caption">Робот следующий по линии</p>
     </div>
 
-    <div class="card_project_container" , onclick="loadPage(trash-duck.html)" >
+    <div class="card_project_container" , onclick="loadPage(&quot;projects/trash-duck/trash-duck.html&quot;)">
       <img src="./images/trash-duck/logo.jpg" alt="trash-duck" class="image">
-      <p class="caption">Робот для сборки мусора на водоемах</p>
+      <p class="caption">Робот для сбора мусора на водоемах</p>
     </div>
   </div>
 
@@ -105,6 +105,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function loadPage(htmlName) {
+      window.location.assign(htmlName);
+    }
+  </script>
+
 </body>
 
 </html>
