@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-i18n-doc-title="error.docTitle">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 | Страница не найдена</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
     <style>
@@ -49,12 +50,12 @@
     <main class="container">
         <div class="error-container">
             <div class="error-code">404</div>
-            <h1 class="error-message" id="error-title">Кажется, вы свернули не туда</h1>
-            <p class="error-subtext" id="error-subtext">
+            <h1 class="error-message" id="error-title" data-i18n="error.title">Кажется, вы свернули не туда</h1>
+            <p class="error-subtext" id="error-subtext" data-i18n="error.subtext">
                 Запрошенный ресурс не существует или был перемещен. Мы проверили все пути, но эта страница ускользнула от нас.
             </p>
-            
-            <a href="index.html" class="btn btn-primary" id="error-home-btn">Перейти на Главную</a>
+
+            <a href="index.html" class="btn btn-primary" id="error-home-btn" data-i18n="error.homeBtn">Перейти на Главную</a>
         </div>
     </main>
 </body>

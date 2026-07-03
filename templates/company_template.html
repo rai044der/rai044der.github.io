@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!--
+  Шаблон страницы компании (опыт работы).
+  Скопируйте этот файл и translation.js в companies/<название>/ и заполните.
+  Переводимые строки помечаются атрибутом data-i18n="ключ"; сами строки лежат
+  в соседнем translation.js (window.PAGE_I18N). Общие строки — в js/script.js.
+  Пути ../../ рассчитаны на companies/<название>/.
+-->
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Опыт работы в [Название Компании]</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/jobs.css">
-    <script src="../js/script.js"></script>
-    <script src="../js/carousel.js"></script>
-
+    <title>Опыт работы</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/jobs.css">
+    <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
 </head>
-<body class="theme-dark"> 
-
+<body class="theme-dark">
     <header class="main-header">
         <nav>
-            <a href="index.html" class="nav-link">← Назад к Портфолио</a>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
             <div class="language-switcher">
                 <span id="lang-ru" class="lang-btn">RU</span>
                 <span class="separator">|</span>
@@ -31,22 +37,22 @@
             <div class="contact-links"></div>
 
             <div class="experience-detail-header">
-                <h1 id="company-name">ООО "Инновационные Решения"</h1>
-                <h2 id="company-role">Ведущий Fullstack Разработчик</h2>
-                <span class="experience-dates" id="company-dates">Январь 2020 — Декабрь 2023 (4 года)</span>
+                <h1 id="company-name" data-i18n="company.name">Название компании</h1>
+                <h2 id="company-role" data-i18n="company.role">Должность</h2>
+                <span class="experience-dates" id="company-dates" data-i18n="company.dates">Месяц Год — Месяц Год</span>
             </div>
 
             <div class="experience-content">
-                <h2 id="duties-title">Основные Задачи и Обязанности</h2>
+                <h2 id="duties-title" data-i18n="duties.title">Основные Задачи и Обязанности</h2>
                 <ul id="duties-list">
-                    <li><span id="duty1">Руководство командой из 3 разработчиков в Agile/Scrum среде.</span></li>
-                    <li><span id="duty2">Проектирование и внедрение микросервисной архитектуры на базе Docker.</span></li>
-                    <li><span id="duty3">Ответственность за CI/CD пайплайны (GitLab CI).</span></li>
+                    <li><span id="duty1" data-i18n="duty1">Задача 1</span></li>
+                    <li><span id="duty2" data-i18n="duty2">Задача 2</span></li>
+                    <li><span id="duty3" data-i18n="duty3">Задача 3</span></li>
                 </ul>
-                
-                <h2 id="achievements-title">Ключевые Достижения</h2>
-                <p id="achievement1">Снизил время отклика основного сервиса на 45% путем рефакторинга критических запросов к БД и внедрения Redis кэширования.</p>
-                <p id="achievement2">Успешно внедрил систему мониторинга (Prometheus/Grafana), что позволило сократить время обнаружения инцидентов на 60%.</p>
+
+                <h2 id="achievements-title" data-i18n="achievements.title">Ключевые Достижения</h2>
+                <p id="achievement1" data-i18n="achievement1">Достижение 1</p>
+                <p id="achievement2" data-i18n="achievement2">Достижение 2</p>
             </div>
         </section>
     </main>

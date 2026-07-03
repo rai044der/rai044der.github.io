@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Портфолио</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follower</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="../../css/project_styles.css?v=4">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
 </head>
+<body class="theme-dark">
 
-<body>
+    <header class="main-header">
+        <nav>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
+            <div class="language-switcher">
+                <span id="lang-ru" class="lang-btn">RU</span>
+                <span class="separator">|</span>
+                <span id="lang-en" class="lang-btn">EN</span>
+            </div>
+        </nav>
+    </header>
 
-    <div class="name" id="name_header">
-        <div>
-            Робот следующий по линии
-        </div>
-    </div>
+    <main class="container">
+        <section class="section">
 
-    <div id="photo_container">
-        <div class="photo">
-            <img src="../../images/follower/logo.jpg"> 
-        </div>
-    </div>
+            <h1 id="hero-title"></h1>
+            <h2 id="hero-subtitle"></h2>
+            <p class="tagline" id="hero-tagline"></p>
+            <div class="contact-links"></div>
 
-    <div class="name" id="name_header" style="height: 8vh;">
-        <div>
-            Описание проекта
-        </div>
-    </div>
+            <div class="project-detail-header">
+                <h1 id="project-title" data-i18n="project.title">Робот, следующий по линии</h1>
+                <div class="project-stack">
+                    <span>PID</span>
+                    <span>3D-печать</span>
+                    <span>Robotics</span>
+                </div>
+            </div>
 
-    <div class="description_container">
-        Существует направление соревнований в робототехнике, смысл который за минимальное время пройти трассу.
-        Трасса представляет собой черную линию на белом фоне (или, наоборот, белвую линию на черном фоне). 
-        Этот робот был построен преимущественно для участия в этих соревнований и отточения своих навыков.
-        Основной алгоритм робот - ПИД регулятор. На вход регулятору подается информация, получаемая с аналоговых датчиков линии, выход с регулятора подается на драйвер двигателей.
-        В процессе разработки этого работа я впервые столкнулся и изучил ПИД регулятор.
-        Также, для этого работано было смоделировано и напечатано на 3D-принтере простое шасси.
-    </div>
+            <div class="project-content">
+                <img src="logo.jpg" alt="Follower">
 
+                <h2 id="overview-title" data-i18n="overview.title">Описание проекта</h2>
+                <p id="overview-text" data-i18n="overview.text">
+                    Существует направление соревнований в робототехнике, смысл которого — за минимальное время пройти
+                    трассу. Трасса представляет собой чёрную линию на белом фоне (или, наоборот, белую линию на чёрном
+                    фоне). Этот робот был построен преимущественно для участия в этих соревнованиях и оттачивания своих
+                    навыков. Основной алгоритм робота — ПИД-регулятор. На вход регулятору подаётся информация, получаемая
+                    с аналоговых датчиков линии, а выход с регулятора подаётся на драйвер двигателей. В процессе
+                    разработки этого робота я впервые столкнулся с ПИД-регулятором и изучил его. Также для него было
+                    смоделировано и напечатано на 3D-принтере простое шасси.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

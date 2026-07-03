@@ -1,51 +1,76 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Портфолио</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash Duck</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="../../css/project_styles.css?v=4">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
 </head>
+<body class="theme-dark">
 
-<body>
+    <header class="main-header">
+        <nav>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
+            <div class="language-switcher">
+                <span id="lang-ru" class="lang-btn">RU</span>
+                <span class="separator">|</span>
+                <span id="lang-en" class="lang-btn">EN</span>
+            </div>
+        </nav>
+    </header>
 
-    <div class="name" id="name_header">
-        <div>
-            Робот для сбора мусора
-        </div>
-    </div>
+    <main class="container">
+        <section class="section">
 
-    <div id="photo_container">
-        <div class="photo">
-            <img src="../../images/trash-duck/logo.png">
-        </div>
-        <div class="photo">
-            <img src="../../images/trash-duck/back.png">
-        </div>
-    </div>
+            <h1 id="hero-title"></h1>
+            <h2 id="hero-subtitle"></h2>
+            <p class="tagline" id="hero-tagline"></p>
+            <div class="contact-links"></div>
 
-    <div class="name" id="name_header" style="height: 8vh;">
-        <div>
-            Описание проекта
-        </div>
-    </div>
+            <div class="project-detail-header">
+                <h1 id="project-title" data-i18n="project.title">Робот для сбора мусора на водоёмах</h1>
+                <div class="project-stack">
+                    <span>Robotics</span>
+                    <span>RC</span>
+                    <span>Автономное управление</span>
+                </div>
+            </div>
 
-    <div class="description_container">
-        Лодка сборщик мусора
-        Цель проекта заключается в создании максимально простой конструкции лодки для сбора мусора на водоемах с
-        автоматическим и ручным управлением.
-        Были достигнуты следующие результаты:
-        <ul>
-            <li>Создана простая конструкция из фанеры</li> 
-            <li>Подобраны комплектующие</li> 
-            <li>Собрана лодка с максимальной грузоподъемностью 2 кг</li> 
-            <li>Написано ПО для дистанционного управления</li> 
-            <li>Написана простая программа автоматического управления</li> 
-        </ul>
-    </div>
+            <div class="project-content">
+                <div class="image-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="logo.png" alt="Trash Duck">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="back.png" alt="Back">
+                        </div>
+                    </div>
 
+                    <button class="carousel-btn prev" aria-label="Предыдущий слайд">←</button>
+                    <button class="carousel-btn next" aria-label="Следующий слайд">→</button>
+
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <h2 id="overview-title" data-i18n="overview.title">Описание проекта</h2>
+                <p id="overview-text" data-i18n="overview.text">
+                    Лодка-сборщик мусора. Цель проекта заключается в создании максимально простой конструкции лодки для
+                    сбора мусора на водоёмах с автоматическим и ручным управлением. Были достигнуты следующие результаты:
+                </p>
+                <ul id="feature-list">
+                    <li><span data-i18n="point1">Создана простая конструкция из фанеры</span></li>
+                    <li><span data-i18n="point2">Подобраны комплектующие</span></li>
+                    <li><span data-i18n="point3">Собрана лодка с максимальной грузоподъёмностью 2 кг</span></li>
+                    <li><span data-i18n="point4">Написано ПО для дистанционного управления</span></li>
+                    <li><span data-i18n="point5">Написана простая программа автоматического управления</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boiler</title>
+    <title>Carwash</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/projects.css">
-    <script src="../../js/script.js"></script>
     <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
 </head>
 <body class="theme-dark"> 
 
     <header class="main-header">
         <nav>
-            <a href="../../index.html" class="nav-link">← Назад к Портфолио</a>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
             <div class="language-switcher">
                 <span id="lang-ru" class="lang-btn">RU</span>
                 <span class="separator">|</span>
@@ -31,12 +32,21 @@
             <div class="contact-links"></div>
 
             <div class="project-detail-header">
-                <h1 id="project-title">Проект автомойки самообслуживания.</h1>
+                <h1 id="project-title" data-i18n="project.title">Терминал самообслуживания для автомойки</h1>
                 <div class="project-stack">
-                    <span>C/C++</span>
-                    <span>Linux</span>
-                    <span>STM32</span>
+                    <span>Python</span>
+                    <span>C</span>
                     <span>Raspberry Pi</span>
+                    <span>STM32</span>
+                    <span>Linux</span>
+                    <span>systemd</span>
+                    <span>multiprocessing</span>
+                    <span>Flask</span>
+                    <span>SQLite</span>
+                    <span>pigpio</span>
+                    <span>UART</span>
+                    <span>SPI</span>
+                    <span>I²C</span>
                     <span>IoT</span>
                 </div>
             </div>
@@ -61,24 +71,32 @@
                     <div class="carousel-dots"></div>
                 </div>
                 
-                <h2 id="overview-title">Обзор Проекта</h2>
-                <p id="overview-text">
-                    Целью проекта было создание программного продукта для управления трехфазным котлом и установкой режимов
-                    отопления с поддержкой дистанционного управления при помощи протокола MQTT. Прошивка полностью написана на
-                    языке C для микроконтроллера ESP32 и платформы WiFi-IoT и представляет собой замкнутую САУ с обратной связью
-                    от датчика температуры.
+                <h2 id="overview-title" data-i18n="overview.title">Обзор Проекта</h2>
+                <p id="overview-text" data-i18n="overview.text">
+                    Решение «под ключ» для автоматизации поста самообслуживания на автомойке: приём любых видов оплаты,
+                    управление оборудованием и учёт выручки — без кассира и круглосуточно. Сердце системы — надёжный
+                    терминал на базе Raspberry Pi с прошивкой на Python: многопроцессная архитектура изолирует каждый
+                    узел, а автозапуск через systemd обеспечивает бесперебойную работу 24/7.
                 </p>
 
-                <h2 id="feature-title">Функционал</h2>
+                <h2 id="feature-title" data-i18n="feature.title">Возможности</h2>
                 <ul id="feature-list">
-                    <li><span id="feature1">Удобный веб интерфейс для настройки режимов отопления.</span></li>
-                    <li><span id="feature2">Постоянное отслеживание параметров котла и моментальное реагирование на внештатные ситуации.</span></li>
-                    <li><span id="feature3">Вывод всей информации на встроенный дисплей устройства.</span></li>
-                    <li><span id="feature4">Возможность управления устройством по протоколу MQTT.</span></li>
-                    <li><span id="feature5">Возможность подключения к Wi-Fi точке для встраивания в систему умного дома или использования устройства автономно.</span></li>
-                    <li><span id="feature6">Поддержка нескольких режимов работы с различными правилами отопления помещения.</span></li>
-                    <li><span id="feature7">В качестве датчиков температуры поддерживаются датчики DS18B20 и DHT11, возможно переключение на горячую.</span></li>
+                    <li><span data-i18n="point1">Принимает все популярные способы оплаты — монеты, купюры и банковские карты (эквайринг).</span></li>
+                    <li><span data-i18n="point2">Собственная программа лояльности с картами клиентов повышает возвращаемость и средний чек.</span></li>
+                    <li><span data-i18n="point3">Интуитивный выбор программы мойки одной кнопкой и честное посекундное списание баланса.</span></li>
+                    <li><span data-i18n="point4">Прямое управление всем оборудованием мойки через плату реле — от воды до пены и воска.</span></li>
+                    <li><span data-i18n="point5">Яркая светодиодная матрица и TFT-дисплей всегда показывают клиенту баланс и текущий режим.</span></li>
+                    <li><span data-i18n="point6">Полная бизнес-аналитика: смены, выручка и популярность программ сохраняются в базе данных.</span></li>
+                    <li><span data-i18n="point7">Самодиагностика узлов и мгновенная реакция на сбои сводят простои к минимуму.</span></li>
+                    <li><span data-i18n="point8">Управление из любой точки: веб-панель администратора и удалённое обновление прошивки без выезда на объект.</span></li>
                 </ul>
+
+                <h2 id="cardreader-title" data-i18n="cardreader.title">Считыватель карт лояльности</h2>
+                <p id="cardreader-text" data-i18n="cardreader.text">
+                    Компактное устройство на базе микроконтроллера STM32, разработанное специально под программу
+                    лояльности. Подключается к терминалу по UART и мгновенно распознаёт карту клиента по простому
+                    текстовому протоколу — быстрое и надёжное начисление и списание бонусов.
+                </p>
             </div>
         </section>
     </main>

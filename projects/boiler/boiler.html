@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boiler</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/projects.css">
-    <script src="../../js/script.js"></script>
     <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
 </head>
 <body class="theme-dark"> 
 
     <header class="main-header">
         <nav>
-            <a href="../../index.html" class="nav-link">← Назад к Портфолио</a>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
             <div class="language-switcher">
                 <span id="lang-ru" class="lang-btn">RU</span>
                 <span class="separator">|</span>
@@ -31,7 +32,7 @@
             <div class="contact-links"></div>
 
             <div class="project-detail-header">
-                <h1 id="project-title">Прошивка для контроллера трехфазного котла</h1>
+                <h1 id="project-title" data-i18n="project.title">Прошивка для контроллера трехфазного котла</h1>
                 <div class="project-stack">
                     <span>C</span>
                     <span>ESP32</span>
@@ -43,23 +44,23 @@
             <div class="project-content">
                 <img src="logo.jpg" alt="Главный скриншот DataViz">
                 
-                <h2 id="overview-title">Обзор Проекта</h2>
-                <p id="overview-text">
+                <h2 id="overview-title" data-i18n="overview.title">Обзор Проекта</h2>
+                <p id="overview-text" data-i18n="overview.text">
                     Целью проекта было создание программного продукта для управления трехфазным котлом и установкой режимов
                     отопления с поддержкой дистанционного управления при помощи протокола MQTT. Прошивка полностью написана на
                     языке C для микроконтроллера ESP32 и платформы WiFi-IoT и представляет собой замкнутую САУ с обратной связью
                     от датчика температуры.
                 </p>
 
-                <h2 id="feature-title">Функционал</h2>
+                <h2 id="feature-title" data-i18n="feature.title">Функционал</h2>
                 <ul id="feature-list">
-                    <li><span id="feature1">Удобный веб интерфейс для настройки режимов отопления.</span></li>
-                    <li><span id="feature2">Постоянное отслеживание параметров котла и моментальное реагирование на внештатные ситуации.</span></li>
-                    <li><span id="feature3">Вывод всей информации на встроенный дисплей устройства.</span></li>
-                    <li><span id="feature4">Возможность управления устройством по протоколу MQTT.</span></li>
-                    <li><span id="feature5">Возможность подключения к Wi-Fi точке для встраивания в систему умного дома или использования устройства автономно.</span></li>
-                    <li><span id="feature6">Поддержка нескольких режимов работы с различными правилами отопления помещения.</span></li>
-                    <li><span id="feature7">В качестве датчиков температуры поддерживаются датчики DS18B20 и DHT11, возможно переключение на горячую.</span></li>
+                    <li><span id="feature1" data-i18n="feature1">Удобный веб интерфейс для настройки режимов отопления.</span></li>
+                    <li><span id="feature2" data-i18n="feature2">Постоянное отслеживание параметров котла и моментальное реагирование на внештатные ситуации.</span></li>
+                    <li><span id="feature3" data-i18n="feature3">Вывод всей информации на встроенный дисплей устройства.</span></li>
+                    <li><span id="feature4" data-i18n="feature4">Возможность управления устройством по протоколу MQTT.</span></li>
+                    <li><span id="feature5" data-i18n="feature5">Возможность подключения к Wi-Fi точке для встраивания в систему умного дома или использования устройства автономно.</span></li>
+                    <li><span id="feature6" data-i18n="feature6">Поддержка нескольких режимов работы с различными правилами отопления помещения.</span></li>
+                    <li><span id="feature7" data-i18n="feature7">В качестве датчиков температуры поддерживаются датчики DS18B20 и DHT11, возможно переключение на горячую.</span></li>
                 </ul>
             </div>
         </section>
