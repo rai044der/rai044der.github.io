@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали Проекта: [Название Проекта]</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <script src="../../js/script.js"></script>
+    <script src="translation.js"></script>
+</head>
+<body class="theme-dark"> 
+    <header class="main-header">
+        <nav>
+            <a href="../index.html" class="nav-link">← Назад к Портфолио</a>
+            <div class="language-switcher">
+                <span id="lang-ru" class="lang-btn">RU</span>
+                <span class="separator">|</span>
+                <span id="lang-en" class="lang-btn">EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 id="hero-title"></h1>
+            <h2 id="hero-subtitle"></h2>
+            <p class="tagline" id="hero-tagline"></p>
+            <div class="contact-links"></div>
+
+            <div class="project-detail-header">
+                <h1 id="project-title">Платформа для Анализа Данных (DataViz)</h1>
+                <div class="project-stack">
+                    <span>React</span>
+                    <span>D3.js</span>
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="image-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="GE/camera.png" alt="Скриншот 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="GE/logo.jpg" alt="Скриншот 2 (например, интерфейс админки)">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="" alt="Скриншот 3 (например, база данных)">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn prev" aria-label="Предыдущий слайд">←</button>
+                    <button class="carousel-btn next" aria-label="Следующий слайд">→</button>
+                    
+                    <div class="carousel-dots"></div>
+                </div>
+                
+                <h2 id="overview-title">Обзор Проекта</h2>
+                <p id="overview-text">
+                    Этот проект был разработан с целью предоставить пользователям интуитивно понятный интерфейс для загрузки и интерактивного исследования больших наборов данных (до 500К записей). Основная задача — визуализировать многомерные данные в режиме реального времени.
+                </p>
+                
+                <h2 id="tech-title">Ключевые Технические Решения</h2>
+                <p id="tech-text">
+                    Я выбрал React для быстрой отрисовки UI и D3.js для кастомизации графиков. Backend на Node.js (Express) обрабатывал запросы к PostgreSQL, оптимизированной для хранения агрегированных данных. Особое внимание уделялось мемоизации компонентов React для избежания ререндеров при обновлении данных.
+                </p>
+
+                <h2 id="contribution-title">Мой Личный Вклад</h2>
+                <ul id="contribution-list">
+                    <li><span id="contrib1">Разработка архитектуры масштабируемого API.</span></li>
+                    <li><span id="contrib2">Создание 5 кастомных, высокопроизводительных визуализаций D3.js.</span></li>
+                    <li><span id="contrib3">Оптимизация запросов к базе данных с использованием индексов.</span></li>
+                </ul>
+
+                <div style="margin-top: 50px; display: flex; gap: 20px;">
+                    <a href="https://github.com/yourrepo/dataviz" target="_blank" class="btn btn-primary">
+                        <span class="icon">🐙</span> Смотреть на GitHub
+                    </a>
+                    <a href="https://live-demo-link.com" target="_blank" class="btn btn-secondary">
+                        <span class="icon">🚀</span> Посмотреть Демо (Если есть)
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Ваше Имя].</p>
+    </footer>
+
+</body>
+</html>
