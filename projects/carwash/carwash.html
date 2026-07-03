@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru" data-i18n-doc-title="doc.title">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carwash</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body class="theme-dark"> 
+
+    <header class="main-header">
+        <nav>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
+            <div class="language-switcher">
+                <span id="lang-ru" class="lang-btn">RU</span>
+                <span class="separator">|</span>
+                <span id="lang-en" class="lang-btn">EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            
+            <h1 id="hero-title"></h1>
+            <h2 id="hero-subtitle"></h2>
+            <p class="tagline" id="hero-tagline"></p>
+            <div class="contact-links"></div>
+
+            <div class="project-detail-header">
+                <h1 id="project-title" data-i18n="project.title">Терминал самообслуживания для автомойки</h1>
+                <div class="project-stack">
+                    <span>Python</span>
+                    <span>C</span>
+                    <span>Raspberry Pi</span>
+                    <span>STM32</span>
+                    <span>Linux</span>
+                    <span>systemd</span>
+                    <span>multiprocessing</span>
+                    <span>Flask</span>
+                    <span>SQLite</span>
+                    <span>pigpio</span>
+                    <span>UART</span>
+                    <span>SPI</span>
+                    <span>I²C</span>
+                    <span>IoT</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="image-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="logo.jpg">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img_1.jpg">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img_2.jpg">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn prev" aria-label="Предыдущий слайд">←</button>
+                    <button class="carousel-btn next" aria-label="Следующий слайд">→</button>
+                    
+                    <div class="carousel-dots"></div>
+                </div>
+                
+                <h2 id="overview-title" data-i18n="overview.title">Обзор Проекта</h2>
+                <p id="overview-text" data-i18n="overview.text">
+                    Решение «под ключ» для автоматизации поста самообслуживания на автомойке: приём любых видов оплаты,
+                    управление оборудованием и учёт выручки — без кассира и круглосуточно. Сердце системы — надёжный
+                    терминал на базе Raspberry Pi с прошивкой на Python: многопроцессная архитектура изолирует каждый
+                    узел, а автозапуск через systemd обеспечивает бесперебойную работу 24/7.
+                </p>
+
+                <h2 id="feature-title" data-i18n="feature.title">Возможности</h2>
+                <ul id="feature-list">
+                    <li><span data-i18n="point1">Принимает все популярные способы оплаты — монеты, купюры и банковские карты (эквайринг).</span></li>
+                    <li><span data-i18n="point2">Собственная программа лояльности с картами клиентов повышает возвращаемость и средний чек.</span></li>
+                    <li><span data-i18n="point3">Интуитивный выбор программы мойки одной кнопкой и честное посекундное списание баланса.</span></li>
+                    <li><span data-i18n="point4">Прямое управление всем оборудованием мойки через плату реле — от воды до пены и воска.</span></li>
+                    <li><span data-i18n="point5">Яркая светодиодная матрица и TFT-дисплей всегда показывают клиенту баланс и текущий режим.</span></li>
+                    <li><span data-i18n="point6">Полная бизнес-аналитика: смены, выручка и популярность программ сохраняются в базе данных.</span></li>
+                    <li><span data-i18n="point7">Самодиагностика узлов и мгновенная реакция на сбои сводят простои к минимуму.</span></li>
+                    <li><span data-i18n="point8">Управление из любой точки: веб-панель администратора и удалённое обновление прошивки без выезда на объект.</span></li>
+                </ul>
+
+                <h2 id="cardreader-title" data-i18n="cardreader.title">Считыватель карт лояльности</h2>
+                <p id="cardreader-text" data-i18n="cardreader.text">
+                    Компактное устройство на базе микроконтроллера STM32, разработанное специально под программу
+                    лояльности. Подключается к терминалу по UART и мгновенно распознаёт карту клиента по простому
+                    текстовому протоколу — быстрое и надёжное начисление и списание бонусов.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

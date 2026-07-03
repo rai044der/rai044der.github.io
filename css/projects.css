@@ -1,0 +1,49 @@
+/* Стили, специфичные для страницы деталей проекта */
+.project-detail-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+.project-detail-header h1 {
+    font-size: 2.5em;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+.project-stack span {
+    display: inline-block;
+    background-color: #30363D; /* Темный фон для стека в этой секции */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* Секция "Обо мне" с Hero Title, чтобы скрипт не выдавал ошибок */
+#hero-title, #hero-subtitle, #hero-tagline, .contact-links {
+    display: none; /* Скрываем элементы index.html, которых нет на этой странице */
+}
+
+/* Адаптация для светлой темы */
+body.theme-light .project-stack span {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+/* Секция с описанием */
+.project-content img {
+    /* width: 100%; */
+    max-height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid var(--color-border);
+}
+.project-content h2 {
+    color: var(--color-primary);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--color-secondary);
+    padding-left: 10px;
+}

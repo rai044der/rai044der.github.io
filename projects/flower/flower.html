@@ -1,43 +1,72 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Портфолио</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
-    <link rel="stylesheet" type="text/css" href="../../css/project_styles.css?v=4">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <script src="translation.js"></script>
+    <script src="../../js/script.js"></script>
 </head>
+<body class="theme-dark">
 
-<body>
+    <header class="main-header">
+        <nav>
+            <a href="../../index.html" class="nav-link" data-i18n="nav.back">← Назад к Портфолио</a>
+            <div class="language-switcher">
+                <span id="lang-ru" class="lang-btn">RU</span>
+                <span class="separator">|</span>
+                <span id="lang-en" class="lang-btn">EN</span>
+            </div>
+        </nav>
+    </header>
 
-    <div class="name" id="name_header">
-        <div>
-            Проект подарка на 8 марта
-        </div>
-    </div>
+    <main class="container">
+        <section class="section">
 
-    <div id="photo_container">
-        <div class="photo">
-            <img src="../../images/flower/logo.png">
-        </div>
-        <div class="photo">
-            <img src="../../images/flower/scheme.png">
-        </div>
-    </div>
+            <h1 id="hero-title"></h1>
+            <h2 id="hero-subtitle"></h2>
+            <p class="tagline" id="hero-tagline"></p>
+            <div class="contact-links"></div>
 
-    <div class="name" id="name_header" style="height: 8vh;">
-        <div>
-            Описание проекта
-        </div>
-    </div>
+            <div class="project-detail-header">
+                <h1 id="project-title" data-i18n="project.title">Проект подарка на 8 марта</h1>
+                <div class="project-stack">
+                    <span>ATtiny85</span>
+                    <span>WS2812C</span>
+                    <span>PCB</span>
+                </div>
+            </div>
 
-    <div class="description_container">
-        Устройство представляет собой плату в виде цветка, оно построено на основе микроконтроллера ATtiny85 и адресных светодиодах WS2812C.
-        Также на плате реализована схема зарядки литий-полимерного аккумулятора и импульсный повышающий преобразователь для питания МК и светодиодов.
-        Для микроконтроллера написана прошивка, реализующая набор различных режимов свечения светодиодов, переключаемых при помощи кнопки. 
-    </div>
+            <div class="project-content">
+                <div class="image-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="logo.png" alt="Flower">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="scheme.png" alt="Scheme">
+                        </div>
+                    </div>
 
+                    <button class="carousel-btn prev" aria-label="Предыдущий слайд">←</button>
+                    <button class="carousel-btn next" aria-label="Следующий слайд">→</button>
+
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <h2 id="overview-title" data-i18n="overview.title">Описание проекта</h2>
+                <p id="overview-text" data-i18n="overview.text">
+                    Устройство представляет собой плату в виде цветка, оно построено на основе микроконтроллера ATtiny85
+                    и адресных светодиодов WS2812C. Также на плате реализована схема зарядки литий-полимерного
+                    аккумулятора и импульсный повышающий преобразователь для питания МК и светодиодов. Для
+                    микроконтроллера написана прошивка, реализующая набор различных режимов свечения светодиодов,
+                    переключаемых при помощи кнопки.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

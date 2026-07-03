@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Страница не найдена</title>
-  </head>
-  <body>
-    <div>
-      <h2>404</h2>
-      <h1>Такой страницы нет :(</h1>
-     </div>
-  </body>
+<html lang="ru" data-i18n-doc-title="error.docTitle">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Страница не найдена</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .error-code {
+            font-size: 8em;
+            font-weight: 900;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(88, 166, 255, 0.3); 
+        }
+
+        .error-message {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--color-text);
+        }
+        
+        .error-subtext {
+            font-size: 1.1em;
+            color: #A0A0A0;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+        
+        body.theme-light .error-code {
+            color: var(--color-primary);
+            text-shadow: 0 0 15px rgba(0, 121, 107, 0.2);
+        }
+        
+    </style>
+</head>
+<body class="theme-dark"> 
+    <main class="container">
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <h1 class="error-message" id="error-title" data-i18n="error.title">Кажется, вы свернули не туда</h1>
+            <p class="error-subtext" id="error-subtext" data-i18n="error.subtext">
+                Запрошенный ресурс не существует или был перемещен. Мы проверили все пути, но эта страница ускользнула от нас.
+            </p>
+
+            <a href="index.html" class="btn btn-primary" id="error-home-btn" data-i18n="error.homeBtn">Перейти на Главную</a>
+        </div>
+    </main>
+</body>
 </html>

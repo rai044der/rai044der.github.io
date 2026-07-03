@@ -1,117 +1,221 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru" data-i18n-doc-title="doc.title">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Портфолио</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.png">
-  <link rel="stylesheet" type="text/css" href="css/homepage_styles.css?v=4">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Офицеров Александр | Портфолио</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <div class="name" id="name_header">
-    <div>
-      Офицеров Александр Сергеевич
-    </div>
-  </div>
 
-  <div class="header_container">
-    <div class="container_short_info">
-      <div>
-        <p>Образование: 4 курс направления ИВТ в ИАТЭ НИЯУ МИФИ</p>
-      </div>
-      <div>
-        <p>Дополнительное образование: оператор БПЛА</p>
-      </div>
-      <div>
-        <p>Основное направление: разработка embedded решений и программного обеспечения к ним</p>
-      </div>
-      <div>
-        <p>Используемые языки: Python и C/C++</p>
-      </div>
-      <div>
-        <p>Платформы: AVR, STM32, ESP8266, ESP32</p>
-      </div>
-    </div>
-    <div id="my_photo_container">
-      <div id="my_photo">
-      </div>
-    </div>
-  </div>
+    <header class="main-header">
+        <nav>
+            <a href="#about" class="nav-link" data-i18n="nav.about">Обо мне</a>
+            <a href="#experience" class="nav-link" data-i18n="nav.experience">Опыт</a>
+            <a href="#projects" class="nav-link" data-i18n="nav.projects">Проекты</a>
 
-  <div class="word_projects_container_container">
-    <div class="word_projects_container">
-      <div class="word_projects">Портфолио</div>
-    </div>
-  </div>
+            <div class="language-switcher">
+                <span id="lang-ru" class="lang-btn active">RU</span>
+                <span class="separator">|</span>
+                <span id="lang-en" class="lang-btn">EN</span>
+            </div>
+        </nav>
+    </header>
 
-  <div id="project_container">
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/GE/ge.html&quot;)">
-      <img src="./images/GE/logo.jpg" alt="Green Expert" class="image">
-      <p class="caption">ERP система для агрономических предприятий</p>
-    </div>
+    <main class="container">
+        <section id="about" class="section about-me">
+            <div class="profile-content">
+                <img src="./images/me.webp" class="profile-photo">
+                <h1 id="hero-title" data-i18n="hero.title"></h1>
 
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/brewery/brewery.html&quot;)">
-      <img src="./images/brewery/logo.png" alt="Brewery" class="image">
-      <p class="caption">Прошивка для пивоварни</p>
-    </div>
+                <h2 id="hero-subtitle" data-i18n="hero.subtitle"></h2>
+                <p class="tagline" id="hero-tagline" data-i18n="hero.tagline"></p>
 
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/boiler/boiler.html&quot;)">
-      <img src="./images/boiler/logo.jpg" alt="Boiler" class="image">
-      <p class="caption">Прошивка для контроллера трехфазного котла</p>
-    </div>
+                <div class="contact-links">
+                    <a href="mailto:oficerov.alex5@gmail.com" class="contact-link">
+                        <span class="icon">✉️</span> <span class="text">Email</span>
+                    </a>
+                    <a href="https://t.me/rai044der" target="_blank" class="contact-link">
+                        <span class="icon">✈️</span> <span class="text">Telegram</span>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="contact-link">
+                        <span class="icon">🐙</span> <span class="text">GitHub</span>
+                    </a>
+                </div>
 
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/iotkit/iotkit.html&quot;)">
-      <img src="./images/iotkit/logo.png" alt="iotkit" class="image">
-      <p class="caption">Плата разработки для системы умного дома</p>
-    </div>
+                <div class="skills-section">
+                    <button class="skills-toggle" id="skills-toggle">
+                        <span class="toggle-icon">+</span>
+                        <span class="toggle-text" data-i18n="skills.toggle">Показать мои навыки</span>
+                    </button>
+                    <div class="skills-content" id="skills-content">
+                        <div class="skill-category">
+                            <h3 data-i18n="skills.languages">Языки</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Bash</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 data-i18n="skills.embedded">Встраиваемые системы и электроника</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Схемотехника</span>
+                                <span class="skill-tag">STM32</span>
+                                <span class="skill-tag">ESP32</span>
+                                <span class="skill-tag">Raspberry Pi</span>
+                                <span class="skill-tag">Embedded Linux</span>
+                                <span class="skill-tag">RTOS</span>
+                                <span class="skill-tag">UART</span>
+                                <span class="skill-tag">SPI</span>
+                                <span class="skill-tag">I²C</span>
+                                <span class="skill-tag">CAN</span>
+                                <span class="skill-tag">USB</span>
+                                <span class="skill-tag">Ethernet</span>
+                                <span class="skill-tag">3D CAD</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 data-i18n="skills.tools">Инструменты и платформы</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">GDB</span>
+                                <span class="skill-tag">Make / CMake</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">CI/CD</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Jira / Confluence</span>
+                                <span class="skill-tag">Syzkaller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/flower/flower.html&quot;)">
-      <img src="./images/flower/logo.png" alt="flower" class="image">
-      <p class="caption">Проект подарка на 8 марта</p>
-    </div>
+            </div>
+        </section>
 
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/follower/follower.html&quot;)">
-      <img src="./images/follower/logo.jpg" alt="Follower" class="image">
-      <p class="caption">Робот следующий по линии</p>
-    </div>
+        <section id="experience" class="section">
+            <h2 data-i18n="experience.heading">Опыт Работы</h2>
 
-    <div class="card_project_container" , onclick="loadPage(&quot;projects/trash-duck/trash-duck.html&quot;)">
-      <img src="./images/trash-duck/logo.png" alt="trash-duck" class="image">
-      <p class="caption">Робот для сбора мусора на водоемах</p>
-    </div>
-  </div>
+            <a href="companies/Kama/Kama.html" class="experience-link-card">
+                <div class="job-header">
+                    <h3 data-i18n="exp.kama.role">Embedded Linux Developer</h3>
+                    <span class="company-name" data-i18n="exp.kama.company">АО «Кама»</span>
+                    <span class="duration" data-i18n="exp.kama.dates">Июль 2024 — настоящее время</span>
+                </div>
+                <p data-i18n="exp.kama.desc">Разработка системного и прикладного ПО для ADAS-систем электромобиля на базе Embedded Linux и RTOS.</p>
+            </a>
 
-  <footer>
-    <div>
-      <p id="contact_word">Контакты:</p>
-      <div class="contact_container">
-        <div class="link_container_0">
-          <p>E-mail:</p>
-          <div class="link_container_1"> <a href="mailto:rai044der@gmail.ru">rai044der@gmail.ru</a>
-          </div>
-        </div>
-        <div class="link_container_0">
-          <p>Telegram:</p>
-          <div class="link_container_1"> <a href="https://t.me/rai044der">@rai044der</a>
-          </div>
-        </div>
-        <div class="link_container_0">
-          <p>VK:</p>
-          <div class="link_container_1"> <a href="https://vk.com/rai044der">Александр Офицеров</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+            <a href="companies/Basealt/Basealt.html" class="experience-link-card">
+                <div class="job-header">
+                    <h3 data-i18n="exp.basealt.role">Младший программист</h3>
+                    <span class="company-name" data-i18n="exp.basealt.company">ООО "Базальт СПО"</span>
+                    <span class="duration" data-i18n="exp.basealt.dates">Апрель 2023 — Июль 2024</span>
+                </div>
+                <p data-i18n="exp.basealt.desc">Работа с безопасностью и стабильностью ядра Linux через автоматизированное тестирование.</p>
+            </a>
 
-  <script>
-    function loadPage(htmlName) {
-      window.location.assign(htmlName);
-    }
-  </script>
+            <a href="companies/GreenStaff/GreenStaff.html" class="experience-link-card">
+                <div class="job-header">
+                    <h3 data-i18n="exp.greenstaff.role">Инженер-программист</h3>
+                    <span class="company-name" data-i18n="exp.greenstaff.company">ООО «Грин-стафф»</span>
+                    <span class="duration" data-i18n="exp.greenstaff.dates">Июнь 2021 — Январь 2023</span>
+                </div>
+                <p data-i18n="exp.greenstaff.desc">Разработка embedded-решений для систем мониторинга в тепличных комплексах.</p>
+            </a>
 
+        </section>
+        <section id="projects" class="section">
+            <h2 data-i18n="projects.heading">Портфолио</h2>
+
+            <div class="project-grid">
+                <a href="projects/carwash/carwash.html" class="project-card">
+                    <img src="projects/carwash/logo.jpg" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.carwash.title">Carwash</h4>
+                        <span class="tech-stack" data-i18n="proj.carwash.stack">Python, Raspberry Pi, STM32</span>
+                    </div>
+                    <p data-i18n="proj.carwash.desc">Проект автомойки самообслуживания.</p>
+                </a>
+
+                <a href="projects/GE/ge.html" class="project-card">
+                    <img src="projects/GE/logo.jpg" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.ge.title">Green Expert</h4>
+                        <span class="tech-stack" data-i18n="proj.ge.stack">Python, Computer Vision, IoT</span>
+                    </div>
+                    <p data-i18n="proj.ge.desc">ERP система для агрономических предприятий.</p>
+                </a>
+
+                <a href="projects/brewery/brewery.html" class="project-card">
+                    <img src="projects/brewery/logo.png" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.brewery.title">Brewery</h4>
+                        <span class="tech-stack" data-i18n="proj.brewery.stack">C, ESP32, IoT</span>
+                    </div>
+                    <p data-i18n="proj.brewery.desc">Прошивка для пивоварни.</p>
+                </a>
+
+                <a href="projects/boiler/boiler.html" class="project-card">
+                    <img src="projects/boiler/logo.jpg" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.boiler.title">Boiler</h4>
+                        <span class="tech-stack" data-i18n="proj.boiler.stack">C, ESP32, MQTT</span>
+                    </div>
+                    <p data-i18n="proj.boiler.desc">Прошивка для контроллера трехфазного котла.</p>
+                </a>
+
+                <a href="projects/iotkit/iotkit.html" class="project-card">
+                    <img src="projects/iotkit/logo.png" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.iotkit.title">Iotkit</h4>
+                        <span class="tech-stack" data-i18n="proj.iotkit.stack">ESP32, PCB, IoT</span>
+                    </div>
+                    <p data-i18n="proj.iotkit.desc">Плата разработки для системы умного дома.</p>
+                </a>
+
+                <a href="projects/flower/flower.html" class="project-card">
+                    <img src="projects/flower/logo.png" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.flower.title">Flower</h4>
+                        <span class="tech-stack" data-i18n="proj.flower.stack">ATtiny85, WS2812C, PCB</span>
+                    </div>
+                    <p data-i18n="proj.flower.desc">Проект подарка на 8 марта.</p>
+                </a>
+
+                <a href="projects/follower/follower.html" class="project-card">
+                    <img src="projects/follower/logo.jpg" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.follower.title">Follower</h4>
+                        <span class="tech-stack" data-i18n="proj.follower.stack">PID, Robotics, 3D print</span>
+                    </div>
+                    <p data-i18n="proj.follower.desc">Робот следующий по линии.</p>
+                </a>
+
+                <a href="projects/trash-duck/trash-duck.html" class="project-card">
+                    <img src="projects/trash-duck/logo.png" class="project-image">
+
+                    <div class="project-meta">
+                        <h4 data-i18n="proj.trashduck.title">Trash Duck</h4>
+                        <span class="tech-stack" data-i18n="proj.trashduck.stack">Robotics, RC</span>
+                    </div>
+                    <p data-i18n="proj.trashduck.desc">Робот для сбора мусора на водоемах.</p>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+    <script src="translation.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
